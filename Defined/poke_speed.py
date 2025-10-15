@@ -1,4 +1,4 @@
-import pokemon_stats
+import Defined.poke_stats
 
 def FnPoke_speed(poke_list):
     dict_stat = poke_list[5]
@@ -7,6 +7,4 @@ def FnPoke_speed(poke_list):
 
 
 
-if __name__ == "__main__":
-    FnPoke_speed()
 

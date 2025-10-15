@@ -24,6 +24,5 @@ def FnPoke_input():
 
     return response.json()
 
-if __name__ == "__main__":
-    FnPoke_input()
+
     
