@@ -1,11 +1,7 @@
 from Defined.poke_input_name import FnPoke_input
-from Defined.poke_attack import FnPoke_attack
-from Defined.poke_defense import FnPoke_defense
-from Defined.poke_hp import FnPoke_hp
-from Defined.poke_spattack import FnPoke_spattack
-from Defined.poke_speed import FnPoke_speed
-from Defined.poke_spdefense import FnPoke_spdefense
-from Defined.poke_stats import FnPoke_stats
+from Defined.poke_name_return import FnPoke_name
+from Defined.poke_legendary import FnPoke_legendary
+from Defined.poke_stats import FnPoke_hp,FnPoke_attack,FnPoke_defense,FnPoke_spattack,FnPoke_spdefense,FnPoke_speed,FnPoke_stats
 
 
 print(r"""
@@ -69,7 +65,8 @@ pokemon_2_stats = [hp_2,defense_2,attack_2,spdefense_2,spattack_2,speed_2]
 for stat in pokemon_2_stats:
     print(stat)
 
+name_1 = FnPoke_name(pokemon_1)
+name_2 = FnPoke_name(pokemon_2)
 
-
-
-
+print(FnPoke_legendary(name_1))
+print(FnPoke_legendary(name_2))
